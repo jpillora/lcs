@@ -1,11 +1,11 @@
 # lcs
 
-Another implementation of [](https://en.wikipedia.org/wiki/Longest_common_subsequence_problem). This implementation is an optimized version with `Operations` exposed.
+Another implementation of the [longest common subsequence algorithm](https://en.wikipedia.org/wiki/Longest_common_subsequence_problem). This implementation is an optimized version with `Operations` exposed.
 
 :warning: Many TODOs still:
 
 * This is a direct port of [this C# version](http://www.mathertel.de/Diff/ViewSrc.aspx) so needs to be cleaned up to be idiomatic Go.
-* Need to define a `Sequence interface` (Similar to the `sort.Interface` interface)
+* Need to define a `Sequence interface` (Similar to the `sort.Interface`)
 * Need to define a `Diff(s1, s1 Sequence) []Operation`
 * Need to define a `StringSequence` implementation for strings
 * Need to define a `Patch(seq Sequence, ops []Operation) Sequence` function
