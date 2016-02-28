@@ -5,7 +5,7 @@ Another implementation of [](https://en.wikipedia.org/wiki/Longest_common_subseq
 :warning: Many TODOs still:
 
 * This is a direct port of [this C# version](http://www.mathertel.de/Diff/ViewSrc.aspx) so needs to be cleaned up to be idiomatic Go.
-* Need to define a `Sequence interface` (Similar to the `sort.Sort` interface)
+* Need to define a `Sequence interface` (Similar to the `sort.Interface` interface)
 * Need to define a `Diff(s1, s1 Sequence) []Operation`
 * Need to define a `StringSequence` implementation for strings
 * Need to define a `Patch(seq Sequence, ops []Operation) Sequence` function
