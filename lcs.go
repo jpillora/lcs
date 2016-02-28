@@ -82,9 +82,9 @@ type Operation struct {
 	StartB int
 
 	// <summary>Number of changes in Data A.</summary>
-	deletedA int
+	DeleteA int
 	// <summary>Number of changes in Data B.</summary>
-	insertedB int
+	InsertB int
 } // Operation
 
 // <summary>
@@ -426,8 +426,8 @@ func CreateDiffs(DataA DiffData, DataB DiffData) []Operation {
 				op = Operation{}
 				op.StartA = StartA
 				op.StartB = StartB
-				op.deletedA = LineA - StartA
-				op.insertedB = LineB - StartB
+				op.DeleteA = LineA - StartA
+				op.InsertB = LineB - StartB
 				result = append(result, op)
 			} // if
 		} // if
@@ -454,6 +454,6 @@ type DiffData struct {
 	data []int
 	// Array of booleans that flag for modified data.
 	// This is the result of the diff.
-	// This means deletedA in the first Data or inserted in the second Data.
+	// This means DeleteA in the first Data or inserted in the second Data.
 	modified []bool
 }
